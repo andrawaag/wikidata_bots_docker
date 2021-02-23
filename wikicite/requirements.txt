@@ -1,0 +1,2 @@
+setuptools~=49.1.0
+wikidataintegrator~=0.8.3

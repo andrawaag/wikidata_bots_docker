@@ -4,4 +4,5 @@ WORKDIR /app
 RUN apt-get update \
 && apt-get install gcc -y \
 && apt-get clean && pip install --user -r requirements.txt
-ENTRYPOINT ["python3", "GeneBot.py"]
+RUN python3 setup.py install
+CMD ["python3", "GeneBot.py"]
